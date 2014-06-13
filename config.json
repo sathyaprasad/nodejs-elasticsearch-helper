@@ -1,0 +1,9 @@
+{
+	"host": "localhost:9200",
+	"index": "geocoder",
+	"type": "entries",
+	"log_file": "./tweets.log",
+	"error_log_file": "./errors.log",
+	"elastic_search_log_file": "./elastic_search_log.log",
+	"retryWaitTime": 30000
+}

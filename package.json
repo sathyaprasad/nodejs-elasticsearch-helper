@@ -1,6 +1,6 @@
 {
-  "dependencies": {
-    "elasticsearch": "^2.2.0",
-    "tuiter": "^0.2.12"
-  }
+    "dependencies": {
+        "elasticsearch": "^2.2.0",
+        "tuiter": "^0.2.12"
+    }
 }
