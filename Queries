@@ -1,1 +1,14 @@
-1. Search for everything
+1. Search for everything, and return only 10 records from the 11th result
+{
+  "query": { "match_all": {} },
+  "size": 10,
+   "from":10
+}
+
+
+2. Sort the query result
+{
+  "query": { "match_all": {} },
+  "sort": { "count": { "order": "desc" } }
+}
+
