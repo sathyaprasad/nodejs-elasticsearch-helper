@@ -12,3 +12,21 @@
   "sort": { "count": { "order": "desc" } }
 }
 
+
+3. Query using keywords, wild card allowed
+{
+  "query": { "match": { "name": "flori*" } }
+}
+
+
+4. Put two search conditions, two exact match, no wild card
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "address": "mill" } },
+        { "match": { "address": "lane" } }
+      ]
+    }
+  }
+}
