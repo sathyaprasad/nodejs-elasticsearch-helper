@@ -30,3 +30,22 @@
     }
   }
 }
+
+
+5. Aggregate results based on multiple fields (e.g., by country and by place)
+{
+  "size": 0,
+  "aggs": {
+    "group_by_country": {
+      "terms": {
+        "field": "country_code"
+      }
+      
+    },
+    "group_by_type": {
+      "terms": {
+        "field": "place_type"
+      }
+    }
+  }
+}
